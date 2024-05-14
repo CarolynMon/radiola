@@ -12,20 +12,11 @@ import java.util.List;
  * @author USUARIO
  */
 public class lista {
-    
-        List<cancion> canciones = new ArrayList<cancion>();
+     boolean reproduciendo;
+     List<cancion> canciones = new ArrayList<cancion>();
+       
         
         
-public lista() {
-    }
-
-    public List<cancion> getCanciones() {
-        return canciones;
-    }
-
-    public void setCanciones(List<cancion> canciones) {
-        this.canciones = canciones;
-    }
 
     
           
