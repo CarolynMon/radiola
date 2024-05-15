@@ -12,8 +12,9 @@ import java.util.List;
  * @author USUARIO
  */
 public class lista {
-     boolean reproduciendo;
      List<cancion> canciones = new ArrayList<cancion>();
+     
+     
        
         
         

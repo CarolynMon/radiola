@@ -4,10 +4,14 @@
  */
 package radiola;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author USUARIO
  */
 public class misdiscoss {
-    
+    String nombreDiscoNuevo;
+     List<cancion> canciones = new ArrayList<cancion>();
 }
