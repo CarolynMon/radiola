@@ -4,21 +4,40 @@
  */
 package radiola;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author USUARIO
- */
 public class lista {
-     List<cancion> canciones = new ArrayList<cancion>();
-     
-     
-       
-        
-        
+    List<cancion> canciones = new ArrayList<cancion>();
+    private int indiceActual;
 
-    
-          
+    public lista() {
+        this.canciones = new ArrayList<>();
+        this.indiceActual = 0;
+    }
+
+    public void setCanciones(List<cancion> canciones) {
+        this.canciones = canciones;
+    }
+
+    public List<cancion> getCanciones() {
+        return canciones;
+    }
+
+    public void agregarcancion(List<cancion> canciones, cancion cancion) {
+        canciones.add(cancion);
+        System.out.println("Se agrego la cancion exitosamente: " + cancion);
+    }
+
+    public cancion siguienteCancion() {
+        if (indiceActual < canciones.size()) {
+            cancion siguiente = canciones.get(indiceActual);
+            indiceActual++;
+            return siguiente;
+        } else {
+            System.out.println("Has llegado al final de la lista de reproducción.");
+            return null;
+        }
+    }
 }

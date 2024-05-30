@@ -7,7 +7,10 @@ package radiola;
 import java.util.logging.Logger;
 
 /**
- *
+import java.util.ArrayList;
+import java.util.List;
+
+/**
  * @author USUARIO
  */
 public class cancion {
@@ -54,6 +57,7 @@ public class cancion {
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
     public void reproducirCancion() {
         
     }
@@ -62,7 +66,4 @@ public class cancion {
     public String toString() {
         return "cancion{" + "nombre=" + nombre + ", autor=" + autor + ", album=" + album + ", genero=" + genero + '}';
     }
-
-    
-    
 }
